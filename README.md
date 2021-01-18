@@ -1,3 +1,4 @@
 # Render Middleware
 
-Node middleware to render the Popdoc microsite previews
+Node middleware to server side render the Popdoc microsite links
+
