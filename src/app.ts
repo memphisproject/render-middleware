@@ -8,6 +8,6 @@ app.use(express.urlencoded({ extended: false }));
 
 app.set("views", path.join( __dirname, "views" ));
 app.set("view engine", "jade" );
-app.use('/:user/:name/:id', router);
+app.use('/', router);
 
 export { app }

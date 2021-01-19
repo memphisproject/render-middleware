@@ -2,10 +2,11 @@ import axios, { AxiosRequestConfig } from "axios";
 import { Router } from "express";
 const router = Router();
 
-router.get('/', (req, res) => {
+router.get('/:user/:name/:id', (req, res) => {
+  const { id } = req.params;
   const config: AxiosRequestConfig = {
     method: 'get',
-    url: 'https://dev.memphis.io/api/v1/mosaic?_id=5f9ff760894ca830edd53b16',
+    url: `https://dev.memphis.io/api/v1/mosaic?_id=${id}`,
     headers: { }
   };
 
