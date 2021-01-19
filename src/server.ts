@@ -1,6 +1,6 @@
 import { app } from "./app";
 
-const PORT = process.env.PORT || 3004;
+const PORT = process.env.PORT || 9998;
 
 // Server Startup
 app.listen(PORT, () => {
